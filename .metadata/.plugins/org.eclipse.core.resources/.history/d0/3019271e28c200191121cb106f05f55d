@@ -1,0 +1,13 @@
+package week_3;
+
+public class RectangleComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new 
+		double length , width, perimeter, area;
+		
+		System.out.println();
+	}
+
+}
