@@ -1,0 +1,45 @@
+package week_4;
+
+public class practice2a {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s1 = "Welcome to Java";
+		String s2 = "Programming is fun";
+		String s3 = "Welcome to Java";
+		
+//		a
+		System.out.println(s1.equals(s2));
+//		b
+		System.out.println(s1.equals(s3));
+//		c
+		System.out.println(s1.compareTo(s2));
+//		d
+		System.out.println(s2.compareTo(s3));
+//		e
+		System.out.println(s2.compareTo(s2));
+//		f
+		System.out.println(s1.charAt(0));
+//		g
+		System.out.println(s1.indexOf('j'));
+//		h
+		System.out.println(s1.indexOf("to"));
+//		i
+		System.out.println(s1.lastIndexOf('a'));
+//		j
+		System.out.println(s1.lastIndexOf("o", 15));
+//		k
+		System.out.println(s1.length());
+//		l
+		System.out.println(s1.substring(5));
+//		m
+		System.out.println(s1.substring(5, 11));
+//		n
+		System.out.println(s1.contains(s2));
+//		o
+		System.out.println(s1.endsWith("Java"));
+//		p
+		System.out.println(s1.startsWith("Wel"));
+	}
+
+}
