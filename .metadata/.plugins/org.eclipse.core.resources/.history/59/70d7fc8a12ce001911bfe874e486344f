@@ -1,0 +1,18 @@
+package Practice3a;
+
+public class quiz1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double randomNum = Math.floor(Math.random() * 12);
+		System.out.println(randomNum);
+		
+		switch (randomNum) {
+		case 1.0:
+			System.out.println("January");
+			break;
+		}
+	}
+
+}
