@@ -1,0 +1,24 @@
+package Practice3;
+
+import java.util.Scanner;
+
+public class practice3e {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+	    
+	    while(true) {
+	      System.out.println("Enter a String: ");
+	      String rev = scanner.next();
+	      String newRev = "";
+	      
+	      for(int i = rev.length() - 1; i >= 0; i--) {
+	        newRev = newRev + rev.charAt(i);
+	      }
+	      
+	      System.out.println("The reverse String of \"" + rev + "\" is \"" + newRev + "\"\n");
+	    }
+	}
+
+}

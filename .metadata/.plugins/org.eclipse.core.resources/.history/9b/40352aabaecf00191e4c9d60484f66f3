@@ -1,4 +1,4 @@
-package week_5;
+package Practice3;
 
 import java.util.Scanner;
 
@@ -45,7 +45,7 @@ public class practice3d {
 						}
 						
 						System.out.println(name + " got an average marks of " + a + " grade is " );
-//						System.out.println(g);
+						System.out.println(g);
 					}
 				}
 			}

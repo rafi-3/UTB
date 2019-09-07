@@ -1,5 +1,6 @@
 package Practice3;
 
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class practice3a {

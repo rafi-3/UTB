@@ -8,30 +8,30 @@ public class practice3d {
 		Scanner scanner = new Scanner(System.in);
 	    
 	    String name,grade = "";
-	    int mark1,mark2,mark3,mark4,marks;
+	    int m1,m2,m3,m4,marks;
 	    
 	    System.out.println("Name: ");
 	    name = scanner.next();
 	    
 	    System.out.println("Mark 1: ");
-	    mark1 = scanner.nextInt();
+	    m1 = scanner.nextInt();
 	    
-	    if(mark1 > -1 && mark1 < 101) {
+	    if(m1 > -1 && m1 < 101) {
 	      System.out.println("Mark 2:");
-	      mark2 = scanner.nextInt();
+	      m2 = scanner.nextInt();
 	      
 	      
-	      if(mark2 > -1 && mark2 < 101) {
+	      if(m2 > -1 && m2 < 101) {
 	        System.out.println("Mark 3: ");
-	        mark3 = scanner.nextInt();
+	        m3 = scanner.nextInt();
 	        
-	        if(mark3 > -1 && mark3 < 101) {
+	        if(m3 > -1 && m3 < 101) {
 	          System.out.println("Mark 4: ");
-	          mark4 = scanner.nextInt();
+	          m4 = scanner.nextInt();
 	          scanner.close();
 	          
-	          if(mark4 > -1 && mark4 < 101) {
-	            marks = (mark1 + mark2 + mark3 + mark4)/4;
+	          if(m4 > -1 && m4 < 101) {
+	            marks = (m1 + m2 + m3 + m4)/4;
 	            
 	            if(marks >= 90) {
 	              grade = "A*";
