@@ -1,17 +1,23 @@
 package Practice3a;
 
+import java.util.Scanner;
+
 public class quiz4 {
 
     public static void main(String[] args) {
-        int num = 122, reversedInteger = 0, remainder, originalInteger;
+    	Scanner scanner = new Scanner(System.in);
+        int num  , reversedInteger = 0, remainder, originalInteger;
+        
+        System.out.println("please enter a number:");
+        num = scanner.nextInt();
         originalInteger = num;
-        // reversed integer is stored in variable
+       
         for( ;num != 0; num /= 10 )
         {
             remainder = num % 10;
             reversedInteger = reversedInteger * 10 + remainder;
         }
-        // palindrome if orignalInteger and reversedInteger are equal
+      
         if (originalInteger == reversedInteger)
             System.out.println(originalInteger + " is a palindrome.");
         else
