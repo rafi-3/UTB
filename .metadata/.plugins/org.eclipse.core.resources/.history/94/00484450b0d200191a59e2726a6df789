@@ -8,12 +8,11 @@ public class q2 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 
-	    System.out.println("Enter scores");
-	    System.out.println("**It will stop if negative number is entered");
+	    System.out.print("Enter scores. The input will ends if negative number is entered: ");
 	    
 	    int[] scores = new int[100];    
 	    int number;                
-	    int totalScore = 0;            
+	    int numberOfScores = 0;            
 	    int average = 0;              
 	    
 	  
@@ -25,24 +24,24 @@ public class q2 {
 	      
 	      scores[i] = number;    
 	      average += number;    
-	      totalScore++;        
+	      numberOfScores++;        
 	    }
 
-	    average /= totalScore;  
+	    average /= numberOfScores;  
 
 	    int aboveOrEqual = 0;      
-	    int belowAverage = 0;                
+	    int below = 0;                
 	    
-	    for (int i = 0; i < totalScore; i++) {
+	    for (int i = 0; i < numberOfScores; i++) {
 	      if (scores[i] >= average)
 	        aboveOrEqual++;        
 	      else
-	    	  belowAverage++;            
+	        below++;            
 	    }
 
-	    System.out.println("Average of scores: " + average);
+	    System.out.println("\nAverage of scores: " + average);
 	    System.out.println("Number of scores above or equal to average: " + aboveOrEqual);
-	    System.out.println("Number of scores below average: " + belowAverage);  
+	    System.out.println("Number of scores below average: " + below);  
 	    
 	    scanner.close();
 	}

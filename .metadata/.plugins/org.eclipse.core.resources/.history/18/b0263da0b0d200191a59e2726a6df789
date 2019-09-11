@@ -9,7 +9,7 @@ public class q2 {
 		Scanner scanner = new Scanner(System.in);
 
 	    System.out.println("Enter scores");
-	    System.out.println("**It will stop if negative number is entered");
+	    System.out.println("The input will ends if negative number is entered: ");
 	    
 	    int[] scores = new int[100];    
 	    int number;                

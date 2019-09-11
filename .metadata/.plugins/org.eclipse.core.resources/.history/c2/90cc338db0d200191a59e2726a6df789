@@ -8,8 +8,7 @@ public class q2 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 
-	    System.out.println("Enter scores");
-	    System.out.println("**It will stop if negative number is entered");
+	    System.out.print("Enter scores. The input will ends if negative number is entered: ");
 	    
 	    int[] scores = new int[100];    
 	    int number;                
