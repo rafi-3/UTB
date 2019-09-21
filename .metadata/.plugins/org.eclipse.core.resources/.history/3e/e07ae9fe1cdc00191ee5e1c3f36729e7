@@ -8,17 +8,16 @@ public class Hangman {
     Scanner scanner = new Scanner(System.in);
     String[] words = {"intelligence", "mosquito", "binomial", "population", "alphabetical", "oddities" };
     
-//  when its false the game will end
     while(true) {
     	
-//    randomize word for quiz
+//    	randomize word for quiz
       String word = words[(int) (Math.random() * words.length)];
       String hidden = new String(new char[word.length()]).replace("\0", "*");
       int tries = 0;
       
-//    number of attempts
+//      there will be only 5 attempts 
       while (tries < 5 && hidden.contains("*")) {
-        System.out.println("Enter a letter in the word " + hidden);
+        System.out.println("Enter a letter in the word" + hidden);
         String guess = scanner.nextLine();
         
         String unhide = "";
@@ -31,7 +30,7 @@ public class Hangman {
             unhide += "*";
           }
         }
-//      to prompt the the letter is in correct and only reveals if the letter is correct
+
         if (hidden.equals(unhide)) {
           tries++;
           System.out.println(guess + " is not in the word.");
@@ -39,7 +38,7 @@ public class Hangman {
           hidden = unhide;
         }
         if (hidden.equals(word)) {
-          System.out.println("The word is " + word + " you missed " + tries + " time");
+          System.out.println("The word was " + word);
         }
         
       }

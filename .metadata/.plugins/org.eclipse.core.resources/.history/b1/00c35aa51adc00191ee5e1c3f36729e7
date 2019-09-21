@@ -2,23 +2,20 @@ package Asg;
 
 import java.util.Scanner;
 
-public class Hangman {
+public class hang {
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     String[] words = {"intelligence", "mosquito", "binomial", "population", "alphabetical", "oddities" };
     
-//  when its false the game will end
     while(true) {
-    	
-//    randomize word for quiz
       String word = words[(int) (Math.random() * words.length)];
       String hidden = new String(new char[word.length()]).replace("\0", "*");
       int tries = 0;
       
-//    number of attempts
-      while (tries < 5 && hidden.contains("*")) {
-        System.out.println("Enter a letter in the word " + hidden);
+      while (tries < 7 && hidden.contains("*")) {
+        System.out.println("Guess any letter in the word");
+        System.out.println(hidden);
         String guess = scanner.nextLine();
         
         String unhide = "";
@@ -31,23 +28,23 @@ public class Hangman {
             unhide += "*";
           }
         }
-//      to prompt the the letter is in correct and only reveals if the letter is correct
+
         if (hidden.equals(unhide)) {
           tries++;
-          System.out.println(guess + " is not in the word.");
+          System.out.println(guess + " is incorrect.Try again");
         } else {
           hidden = unhide;
         }
         if (hidden.equals(word)) {
-          System.out.println("The word is " + word + " you missed " + tries + " time");
+          System.out.println("You win! The word was " + word);
         }
         
       }
       
-      System.out.println("Do you want to guess another word? (y/n)");
+      System.out.println("\nPlay again? (yes/no)");
       String again = scanner.nextLine();
       
-      if(!again.equalsIgnoreCase("y")) {
+      if(!again.equalsIgnoreCase("yes")) {
         System.out.println("\nThank you for playing!");
         break;
       }
