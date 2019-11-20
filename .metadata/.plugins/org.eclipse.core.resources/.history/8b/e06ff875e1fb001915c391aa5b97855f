@@ -1,0 +1,23 @@
+package Asg;
+
+import java.util.Scanner;
+
+public class converter {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		// TODO Auto-generated method stub
+		while(true) {
+			System.out.println("Number Cnnversion System");
+			System.out.println("A. Decimal to Binary");
+			System.out.println("B. Decimal to Hexadecimal");
+			System.out.println("C. Binary to Decimal");
+			System.out.println("D. Hexadecimal to Decimal");
+			String option = scanner.nextLine();
+			if (option.equalsIgnoreCase("a")) {
+				
+			}
+		}
+	}
+
+}

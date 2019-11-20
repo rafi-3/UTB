@@ -1,0 +1,40 @@
+package Asg;
+
+import java.util.Scanner;
+
+public class converter {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int no;
+		// TODO Auto-generated method stub
+		while(true) {
+			System.out.println("\nNumber Conversion System");
+			System.out.println("A. Decimal to Binary");
+			System.out.println("B. Decimal to Hexadecimal");
+			System.out.println("C. Binary to Decimal");
+			System.out.println("D. Hexadecimal to Decimal");
+			System.out.println("Your choice?");
+			String option = scanner.nextLine();
+			
+			
+			if (option.equalsIgnoreCase("a")) {
+				System.out.println("Enter a decimal to convert to binary: ");
+		        Scanner userInput = new Scanner(System.in);
+		        int intN = userInput.nextInt();
+		        decToBin(intN);
+		        System.out.print("the binary is ");
+			}
+			
+		}
+	}
+	public static void decToBin(int num) {
+        if (num <= 0) {
+            return;
+        }
+        else {
+            decToBin(num / 2);
+            System.out.print(num % 2);
+        }
+    }
+}
